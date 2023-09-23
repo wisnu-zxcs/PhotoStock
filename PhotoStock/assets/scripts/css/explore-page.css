@@ -1,0 +1,57 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root{
+    --main: rgba(165, 42, 42, 1);
+    --overlay: rgba(25, 25, 25, 1);
+    --blocks: rgba(255, 255, 255, 1);
+    --readable: rgba(80, 80, 80, 1);
+    --label: rgba(133, 133, 133, 1);
+    --input: rgba(235, 235, 235, 1);
+    --inputHover: rgba(165, 165, 165, 1);
+    --buttonHover: rgb(105, 10, 10);
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--overlay);
+}
+
+header{
+    background: var(--overlay);
+}
+
+#navTop{
+    display: flex;
+    padding: 20px 20px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+#navTop img{
+    max-width: 45px;
+}
+
+#navTop a{
+    text-decoration: none;
+    color: var(--inputHover);
+    margin: 8px 32px;
+    margin-right: 0px;
+    border-radius: 6px;
+    transition: 100ms ease-in-out;
+}
+
+#navTop a:hover{
+    color: var(--main);
+    border-bottom: 5px solid var(--main);
+}
+
+#navTop input{
+    margin: 0px 32px;
+    border: 1px solid var(--inputHover);
+    border-radius: 50px;
+    background: none;
+    color: var(--input);
+    padding: 8px 32px;
+    width: 100%;
+    outline: none;
+}
