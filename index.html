@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon mode -->
+    <link rel="icon" href="assets/images/photostock-icon-black.png">
+    <link rel="icon" href="assets/images/photostock-icon-white.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Custom sheets -->
+    <link rel="stylesheet" href="assets/scripts/css/login-page.css">
+    <script src="assets/scripts/javascript/loginPage-front.js"></script>
+
+    <!-- Framework and CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>PhotoStock ID</title>
+</head>
+
+<body>
+    <div class="bodyWrapper" id="bodyWrapper">
+        <div class="leftWrapper" id="leftWrapper">
+            <img alt="logo-header" src="assets/images/photostock-header.png">
+        </div>
+        <div class="rightWrapper" id="rightWrapper">
+            <div class="loginBox" id="loginBox">
+                <h1>Sign in</h1>
+                <p>New user? <a id="registButton" href="#">Create an account</a></p>
+                <form action="explore-page.html" method="get">
+                    <label for="loginEmail">Email address</label>
+                    <input type="email" name="loginEmail" id="loginEmail" required autofocus>
+                    <label for="loginPassword">Password</label>
+                    <input type="password" name="" id="loginPassword" required>
+                    <span id="passwordReveal">Show password</span>
+                    <button type="submit" >Sign in</button>
+                    <a class="loginHelp" id="loginHelp" href="">Need help signing in?</a>
+                </form>
+            </div>
+            <div class="registBox" id="registBox">
+                <h1>Create an account</h1>
+                <p>Already have an account? <a id="loginButton" href="#">Sign in</a></p>
+                <form action="explore-page.html" method="post">
+                    <label for="registName">Your name</label>
+                    <input type="text" name="" id="registName" required autofocus>
+                    <label for="registEmail">Your Email</label>
+                    <input type="email" name="" id="registEmail" required>
+                    <label for="registPassword">Create a password</label>
+                    <input type="password" name="" id="registPassword" required>
+                    <span id="passwordReveal">Show password</span>
+                    <button type="submit" >Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/scripts/javascript/loginPage-back.js"></script>
+
+</html>
