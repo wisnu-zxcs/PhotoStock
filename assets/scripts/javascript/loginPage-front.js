@@ -1,7 +1,8 @@
-const totalCount = 23;
+// Random background picture processor
+const totalPicture = 54;
 
 function backgroundChanger() {
-  const num = Math.ceil(Math.random() * totalCount);
+  const randomGenerator = Math.ceil(Math.random() * totalPicture);
 
-  document.body.style.background = `url('assets/images/backgrounds/${num}.jpeg') center/cover no-repeat fixed`;
+  document.querySelector("body").style.background = `url('assets/images/backgrounds/${randomGenerator}.jpg') center/cover no-repeat fixed`;
 }

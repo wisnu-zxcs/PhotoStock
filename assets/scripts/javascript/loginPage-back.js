@@ -3,9 +3,9 @@ const loginButton = document.querySelector("#loginButton");
 const registBlock = document.querySelector(".registBox");
 const registButton = document.querySelector("#registButton");
 
-const toggleBlocks = showLogin => {
-    loginBlock.style.display = showLogin ? "block" : "none";
-    registBlock.style.display = showLogin ? "none" : "block";
+const toggleBlocks = showForm => {
+    loginBlock.style.display = showForm ? "block" : "none";
+    registBlock.style.display = showForm ? "none" : "block";
 };
 
 registButton.addEventListener("click", () => toggleBlocks(false));
