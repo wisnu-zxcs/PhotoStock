@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
 :root {
     --main: rgba(165, 42, 42, 1);
     --overlay: rgba(68, 68, 68, 0.5);
@@ -35,6 +37,14 @@ body {
 
 .leftWrapper img {
     max-width: 500px;
+}
+
+.headerLogo-white {
+    display: flex;
+}
+
+.headerLogo-black {
+    display: none;
 }
 
 .rightWrapper {
@@ -137,4 +147,70 @@ body {
 .loginHelp {
     display: flex;
     margin-top: 150px;
+}
+
+@media (max-width: 767px) {
+    .bodyWrapper {
+        display: table;
+        background: var(--blocks);
+    }
+
+    .leftWrapper {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .leftWrapper img {
+        max-width: 65%;
+    }
+
+    .headerLogo-white {
+        display: none;
+    }
+
+    .headerLogo-black {
+        display: flex;
+    }
+
+    .rightWrapper {
+        width: 100%;
+    }
+
+    .loginBox,
+    .registBox {
+        padding: 15%;
+        background: none;
+    }
+
+    .loginBox h1,
+    .registBox h1 {
+        margin-bottom: 5%;
+    }
+
+    .loginBox p,
+    .registBox p {
+        margin-bottom: 15%;
+    }
+
+    .loginBox input,
+    .registBox input {
+        margin-bottom: 10%;
+    }
+
+    .loginBox button,
+    .registBox button {
+        float: none;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    .loginHelp {
+        margin-top: 15%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) {
 }
