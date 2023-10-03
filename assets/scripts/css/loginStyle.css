@@ -1,0 +1,191 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    transition: 5s ease-in-out;
+}
+
+:root {
+    --primary: rgba(165, 42, 42, 1);
+    --primaryHOVER: rgba(105, 10, 10, 1);
+    --overlay: rgba(70, 70, 70, 0.5);
+    --blocks: rgba(255, 255, 255, 1);
+    --texts: rgba(80, 80, 80, 1);
+    --labels: rgba(135, 135, 135, 1);
+    --inputUnderline: rgba(235, 235, 235, 1);
+    --inputUnderlineHOVER: rgba(165, 165, 165, 1);
+}
+
+.bodyWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--overlay);
+    width: 100%;
+    height: 100%;
+}
+
+.leftWrapper {
+    display: inline-flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.leftWrapper img {
+    max-width: 500px;
+}
+
+.headerLogo-white {
+    display: inline-block;
+}
+
+.headerLogo-black {
+    display: none;
+}
+
+.rightWrapper {
+    display: inline-flex;
+    width: 40%;
+}
+
+.loginBox,
+.registBox {
+    display: inline-block;
+    padding: 5rem;
+    border-radius: 5px;
+    max-width: 550px;
+    background: var(--blocks);
+}
+
+.registBox {
+    display: none;
+}
+
+.loginBox h1,
+.registBox h1 {
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.loginBox p,
+.registBox p {
+    color: var(--texts);
+    margin-bottom: 20%;
+}
+
+.loginBox .registButton,
+.registBox .loginButton {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.loginBox .registButton:hover,
+.registBox .loginButton:hover,
+.loginBox .loginHelp:hover {
+    text-decoration: underline;
+}
+
+.loginBox label,
+.registBox label {
+    color: var(--labels);
+    font-size: smaller;
+}
+
+.loginBox input,
+.registBox input {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid var(--inputUnderline);
+    margin-bottom: 15%;
+    width: 100%;
+    height: 2.1rem;
+    transition: none;
+}
+
+.loginBox input:hover,
+.registBox input:hover {
+    border-bottom: 1px solid var(--inputUnderlineHOVER);
+}
+
+.loginBox input:focus,
+.registBox input:focus {
+    border-bottom: 2px solid var(--primary);
+}
+
+.loginBox .passwordReveal,
+.registBox .passwordReveal {
+    font-weight: bold;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+.loginBox button,
+.registBox button {
+    float: right;
+    padding: 2% 6%;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: var(--blocks);
+    background: var(--primary);
+    transition: 100ms ease-in-out;
+}
+
+.loginBox button:hover,
+.registBox button:hover {
+    background: var(--primaryHOVER);
+}
+
+.loginBox .loginHelp {
+    display: flex;
+    color: var(--primary);
+    margin-top: 25%;
+    width: fit-content;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .bodyWrapper {
+        display: grid;
+        background: var(--blocks);
+    }
+
+    .leftWrapper {
+        width: 100%;
+        padding-top: 15%;
+    }
+
+    .leftWrapper img {
+        max-width: 70%;
+    }
+
+    .headerLogo-white {
+        display: none;
+    }
+
+    .headerLogo-black {
+        display: inline-block;
+    }
+
+    .rightWrapper {
+        width: 100%;
+    }
+
+    .loginBox,
+    .registBox {
+        padding: 15%;
+        max-width: 100%;
+    }
+
+    .loginBox button,
+    .registBox button {
+        float: none;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .loginBox .loginHelp {
+        margin-top: 15%;
+    }
+}

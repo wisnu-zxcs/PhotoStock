@@ -10,7 +10,7 @@
     <link rel="icon" href="assets/images/photostock-icon-white.png" media="(prefers-color-scheme: dark)">
 
     <!-- Custom sheets -->
-    <link rel="stylesheet" href="assets/scripts/css/login-page.css">
+    <link rel="stylesheet" href="assets/scripts/css/loginStyle.css">
     <script src="assets/scripts/javascript/loginPage-front.js"></script>
 
     <!-- Framework and CDN -->
@@ -30,28 +30,28 @@
         <div class="rightWrapper" id="rightWrapper">
             <div class="loginBox" id="loginBox">
                 <h1>Sign in</h1>
-                <p>New user? <a id="registButton" href="#">Create an account</a></p>
-                <form action="explore-page" method="get">
+                <p>New user? <span class="registButton" id="registButton">Create an account</span></p>
+                <form action="explore" method="get">
                     <label for="loginEmail">Email address</label>
                     <input type="email" name="loginEmail" id="loginEmail" required autofocus>
                     <label for="loginPassword">Password</label>
                     <input type="password" name="" id="loginPassword" required>
-                    <span id="passwordReveal">Show password</span>
+                    <span class="passwordReveal" id="passwordReveal">Show password</span>
                     <button type="submit" >Sign in</button>
-                    <a class="loginHelp" id="loginHelp" href="">Need help signing in?</a>
+                    <span class="loginHelp" id="loginHelp">Need help signing in?</span>
                 </form>
             </div>
             <div class="registBox" id="registBox">
                 <h1>Create an account</h1>
-                <p>Already have an account? <a id="loginButton" href="#">Sign in</a></p>
-                <form action="explore-page" method="post">
+                <p>Already have an account? <span class="loginButton" id="loginButton">Sign in</span></p>
+                <form action="explore" method="post">
                     <label for="registName">Your name</label>
                     <input type="text" name="" id="registName" required autofocus>
                     <label for="registEmail">Your Email</label>
                     <input type="email" name="" id="registEmail" required>
                     <label for="registPassword">Create a password</label>
                     <input type="password" name="" id="registPassword" required>
-                    <span id="passwordReveal">Show password</span>
+                    <span class="passwordReveal" id="passwordReveal">Show password</span>
                     <button type="submit" >Sign up</button>
                 </form>
             </div>

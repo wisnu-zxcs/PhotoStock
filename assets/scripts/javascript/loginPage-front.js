@@ -1,8 +1,11 @@
-// Random background picture processor
-const totalPicture = 54;
+const pictureTotal = 54;
+const picturePath = Array.from({ length: pictureTotal }, (_, i) => `assets/images/backgrounds/${i + 1}.jpg`);
+
+function backgroundPreloader(Paths) {
+  Paths.forEach((path) => new Image().src = path);
+}
 
 function backgroundChanger() {
-  const randomGenerator = Math.ceil(Math.random() * totalPicture);
-
-  document.querySelector("body").style.background = `url('assets/images/backgrounds/${randomGenerator}.jpg') center/cover no-repeat fixed`;
+  const pictureRandomizer = picturePath[Math.floor(Math.random() * pictureTotal)];
+  document.body.style.background = `url('${pictureRandomizer}') center/cover no-repeat fixed`;
 }

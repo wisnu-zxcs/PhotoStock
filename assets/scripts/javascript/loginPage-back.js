@@ -16,12 +16,13 @@ const loginPassword = document.querySelector("#loginPassword");
 const registPassword = document.querySelector("#registPassword");
 
 passwordReveal.forEach(button => {
-    button.addEventListener("click", function (){
+    button.addEventListener("click", function () {
         const visiblePassword = loginPassword.type === "text";
         loginPassword.type = registPassword.type = visiblePassword ? "password" : "text";
         button.textContent = visiblePassword ? "Show password" : "Hide password";
     });
 });
 
+backgroundPreloader(picturePath);
 backgroundChanger();
 setInterval(backgroundChanger, 15000);
